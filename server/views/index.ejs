@@ -111,7 +111,7 @@ $(document).ready(function(){
 
     (async () => {
 
-        dataset = await fetch('http://localhost:3000/api/populations')
+        dataset = await fetch('https://sgn-nodejs-react-js.onrender.com/api/populations')
                         .then(response => response.json());
 
         chart = Highcharts.chart('container', {
